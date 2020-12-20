@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|start">
+                <com.vlad.joysticks.JoyStickHandler
+                    android:id = "@+id/left_stick"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="50dp"
+                    android:background="@drawable/stickfield"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|end"
+            android:layout_margin="50dp">
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/getVersionsButton"
+                    android:text="@string/get_versions">
+
+                </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center|top">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/propeller"
+                    android:id="@+id/propellerImageView"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|bottom">
+                <com.vlad.joysticks.JoyStickHandler
+                    android:id = "@+id/right_stick"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="50dp"
+                    android:background="@drawable/stickfield"/>
+        </LinearLayout>
+
+
+</FrameLayout>

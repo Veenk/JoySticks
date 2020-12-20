@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JoySticks</string>
+    <string name="propeller">Propeller</string>
+    <string name="get_versions">GET VERSIONS</string>
+</resources>
